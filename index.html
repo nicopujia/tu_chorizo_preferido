@@ -1,11 +1,107 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
   <head>
+    <meta property="og:title" content="Tu Chorizo Prefido" />
+    <meta
+      property="og:description"
+      content="Tu Chorizo Preferido, un sabor sin medida, que en cada bocado, la vida se anima"
+    />
+    <meta
+      property="og:url"
+      content="https://tuchorizopreferido.nicolaspujia.com/"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tu Chorizo Preferido</title>
     <link rel="stylesheet" href="css/output.css" />
     <link rel="icon" type="image/png" href="images/logo.png" />
   </head>
-  <body></body>
+  <body class="text-white overflow-x-hidden">
+    <main
+      class="bg-cover bg-center bg-no-repeat bg-fixed"
+      style="background-image: url('images/background.png')"
+    >
+      <div
+        class="h-screen flex flex-col justify-between items-center"
+        style="background-color: rgba(0, 0, 0, 0.6)"
+      >
+        <nav class="w-screen flex flex-row justify-between items-center py-6">
+          <div class="flex flex-row items-center">
+            <img src="images/logo.png" class="mx-6 h-12 rounded-full" />
+            <strong>Tu Chorizo Preferido</strong>
+          </div>
+          <ul class="sm:flex sm:flex-row sm:justify-end hidden">
+            <li class="pr-6"><a href="#menu">Menú</a></li>
+            <li class="pr-6"><a href="#sobre-nosotros">Sobre nostros</a></li>
+            <li class="pr-6"><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+        <h1
+          class="font-kanit font-bold italic text-center sm:text-6xl text-4xl p-4"
+        >
+          El sabor de tu chorizo, nuestro compromiso.
+        </h1>
+        <a class="animate-bounce" href="#menu">
+          <svg
+            class="h-8 w-8 text-white"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="19 12 12 19 5 12" />
+          </svg>
+        </a>
+      </div>
+    </main>
+    <section id="menu" class="bg-yellow-900 pb-8">
+      <h1 class="text-6xl p-8 font-bold">Nuestros platos</h1>
+      <div class="flex flex-wrap justify-center">
+        <article
+          class="shadow-md m-4 bg-yellow-800 text-2xl h-fit hover:shadow-2xl duration-200"
+        >
+          <img src="images/choripan.jpeg" alt="foto" class="w-full" />
+          <h2 class="p-4">Choripan</h2>
+        </article>
+        <article
+          class="shadow-md m-4 bg-yellow-800 text-2xl h-fit hover:shadow-2xl duration-200"
+        >
+          <img src="images/bondiola.jpeg" alt="foto" class="w-full" />
+          <h2 class="p-4">Bondiola de cerdo</h2>
+        </article>
+        <article
+          class="shadow-md m-4 bg-yellow-800 text-2xl h-fit hover:shadow-2xl duration-200"
+        >
+          <img src="images/asado.jpeg" alt="foto" class="w-full" />
+          <h2 class="p-4">Asado</h2>
+        </article>
+        <article
+          class="shadow-md m-4 bg-yellow-800 text-2xl h-fit hover:shadow-2xl duration-200"
+        >
+          <img src="images/provoleta.jpeg" alt="foto" class="w-full" />
+          <h2 class="p-4">Provoleta a la parrilla</h2>
+        </article>
+        <article
+          class="shadow-md m-4 bg-yellow-800 text-2xl h-fit hover:shadow-2xl duration-200"
+        >
+          <img src="images/pollo.jpeg" alt="foto" class="w-full" />
+          <h2 class="p-4">Pollo al horno</h2>
+        </article>
+        <article
+          class="shadow-md m-4 bg-yellow-800 text-2xl h-fit hover:shadow-2xl duration-200"
+        >
+          <img src="images/vacio.jpeg" alt="foto" class="w-full" />
+          <h2 class="p-4">Vacío a la cacerola</h2>
+        </article>
+      </div>
+      <p class="text-center text-3xl font-light p-12">Y todo con guarnición.</p>
+    </section>
+    <section id="sobre-nosotros" class="h-screen bg-yellow-950">
+      Sobre nosotros
+    </section>
+    <section id="contacto" class="h-screen bg-yellow-900">Contacto</section>
+    <footer class="h-24 bg-yellow-950">Pie de página</footer>
+  </body>
 </html>
