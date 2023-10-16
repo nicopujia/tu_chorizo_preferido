@@ -25,19 +25,49 @@
         class="h-screen flex flex-col justify-between items-center"
         style="background-color: rgba(0, 0, 0, 0.6)"
       >
-        <nav class="w-screen flex flex-row justify-between items-center py-6">
-          <div class="flex flex-row items-center">
-            <img src="images/logo.png" class="mx-6 h-12 rounded-full" />
+        <nav class="w-screen flex flex-row justify-between items-center p-8">
+          <a href="#" class="flex flex-row items-center">
+            <img
+              src="images/logo.png"
+              class="mx-6 h-12 rounded-full hover:animate-spin"
+            />
             <strong>Tu Chorizo Preferido</strong>
-          </div>
+          </a>
           <ul class="sm:flex sm:flex-row sm:justify-end hidden">
-            <li class="pr-6"><a href="#menu">Menú</a></li>
-            <li class="pr-6"><a href="#sobre-nosotros">Sobre nostros</a></li>
-            <li class="pr-6"><a href="#contacto">Contacto</a></li>
+            <li class="pr-6">
+              <a href="#menu" class="group text-white transition duration-300">
+                Menú
+                <span
+                  class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-white"
+                ></span>
+              </a>
+            </li>
+            <li class="pr-6">
+              <a
+                href="#sobre-nosotros"
+                class="group text-white transition duration-300"
+              >
+                Sobre nostros
+                <span
+                  class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-white"
+                ></span>
+              </a>
+            </li>
+            <li class="pr-6">
+              <a
+                href="#contacto"
+                class="group text-white transition duration-300"
+              >
+                Contacto
+                <span
+                  class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-white"
+                ></span>
+              </a>
+            </li>
           </ul>
         </nav>
         <h1
-          class="font-kanit font-bold italic text-center sm:text-6xl text-4xl p-4"
+          class="font-kanit font-bold italic text-center sm:text-6xl text-4xl p-4 bg-gradient-to-r bg-clip-text text-transparent from-orange-300 via-white to-orange-300 animate-text"
         >
           El sabor de tu chorizo, nuestro compromiso.
         </h1>
@@ -56,9 +86,9 @@
         </a>
       </div>
     </main>
-    <section id="menu" class="bg-yellow-900 pb-8">
+    <section id="menu" class="min-h-screen bg-yellow-900 pb-8">
       <h1 class="text-6xl p-8 font-bold">Nuestros platos</h1>
-      <div class="flex flex-wrap justify-center">
+      <div class="flex flex-wrap justify-center items-center">
         <article
           class="shadow-md m-4 bg-yellow-800 text-2xl h-fit hover:shadow-2xl duration-200"
         >
@@ -95,13 +125,81 @@
           <img src="images/vacio.jpeg" alt="foto" class="w-full" />
           <h2 class="p-4">Vacío a la cacerola</h2>
         </article>
+        <p class="text-center text-3xl font-light p-12">
+          Y todo con guarnición.
+        </p>
       </div>
-      <p class="text-center text-3xl font-light p-12">Y todo con guarnición.</p>
     </section>
-    <section id="sobre-nosotros" class="h-screen bg-yellow-950">
-      Sobre nosotros
+    <section id="sobre-nosotros" class="min-h-screen bg-yellow-950 p-8">
+      <h1 class="text-6xl pb-8 font-bold">¿Quiénes somos?</h1>
+
+      <p class="text-lg leading-loose">
+        Mucho más que una empresa, somos una cooperativa de trabajo comprometida
+        con la calidad y los valores que rigen nuestro comportamiento.
+      </p>
+
+      <div class="grid sm:grid-cols-2">
+        <div>
+          <h2 class="text-4xl pt-12 pb-4 font-light">Nuestra Historia</h2>
+          <p class="text-lg leading-loose max-w-prose">
+            Tu Chorizo Preferido nació de la idea de un grupo de apasionados por
+            la carne, que decidieron unir fuerzas y talentos para llevar a cabo
+            un proyecto común. Desde nuestros inicios, nos propusimos crear una
+            empresa que no solo fuera exitosa en términos comerciales, sino que
+            también tuviera un impacto positivo en la sociedad que la rodea.
+          </p>
+        </div>
+        <div>
+          <h2 class="text-4xl pt-12 pb-4 font-light">Nuestra Misión</h2>
+          <p class="text-lg leading-loose max-w-prose">
+            Nuestra misión es simple, pero poderosa: ofrecer el sabor
+            inigualable de un buen chorizo, mientras promovemos valores
+            esenciales en cada paso que damos. La preocupación por los demás,
+            responsabilidad social y la igualdad y la equidad son pilares
+            fundamentales en cada decisión que tomamos.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-4xl pt-12 pb-4 font-light">
+            La Cooperativa de Trabajo
+          </h2>
+          <p class="text-lg leading-loose max-w-prose">
+            Esto significa que todos los miembros de nuestro equipo tienen voz y
+            voto en la toma de decisiones. Creemos en la igualdad de
+            oportunidades y en el poder de la colaboración. Cada empleado es una
+            parte esencial de nuestra familia, y juntos construimos un ambiente
+            laboral inclusivo y productivo. Además, nos esforzamos por mantener
+            prácticas sostenibles y éticas en cada aspecto de nuestra operación.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-4xl pt-12 pb-4 font-light">Nuestro Lema</h2>
+          <p class="text-lg leading-loose max-w-prose">
+            "El sabor de tu chorizo, nuestro compromiso" resume nuestra
+            dedicación a nuestros clientes y a la calidad de nuestros productos.
+            Pero no solo vendemos carne, sino que compartimos nuestra pasión por
+            la misma y nuestra responsabilidad social. Nos enorgullece ser parte
+            de su elección, y trabajamos constantemente para merecer su
+            confianza y aprecio.
+          </p>
+        </div>
+      </div>
     </section>
-    <section id="contacto" class="h-screen bg-yellow-900">Contacto</section>
-    <footer class="h-24 bg-yellow-950">Pie de página</footer>
+    <section id="contacto" class="bg-yellow-900 p-8 text-xl">
+      <h1 class="text-6xl font-bold pb-4">Encontranos</h1>
+      <p>Vení a comer en <strong>Achaval 241</strong></p>
+      <p>Hacenos un pedido llamando al <strong>+54 9 11 5134-0696</strong></p>
+      <p>
+        Seguinos como <strong>@tuchorizopreferido</strong> en tus redes sociales
+        favoritas
+      </p>
+    </section>
+    <footer class="min-h-24 bg-yellow-950 flex justify-center items-center">
+      <p class="text-center p-4 text-sm">
+        2023 &copy Tu Chorzio Preferido. Todos los derechos reservados.
+      </p>
+    </footer>
   </body>
 </html>
